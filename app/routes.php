@@ -11,7 +11,16 @@
 |
 */
 
+// All requests with num should be of length 0 or 2
+Route::pattern('num', '[0-9]{0,2}');
+
+// Main page
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('index');
 });
+
+// Lorem ipsum
+Route::get('lorem-ipsum/{num?}', 'LoremIpsumController@generateLoremIpsum');
+// Profile generator
+Route::get('profile-generator/{num?}', 'ProfileGeneratorController@generateProfile');
