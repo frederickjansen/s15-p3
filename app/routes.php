@@ -17,7 +17,7 @@ Route::pattern('num', '[0-9]{0,2}');
 // Main page
 Route::get('/', function()
 {
-	return View::make('index');
+	return View::make('index', array('title' => 'P3 - Developer\'s Best Friend'));
 });
 
 // Lorem ipsum
