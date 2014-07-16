@@ -22,5 +22,5 @@ Route::get('/', function()
 
 // Lorem ipsum
 Route::get('lorem-ipsum/{num?}', 'LoremIpsumController@generateLoremIpsum');
-// Profile generator
-Route::get('profile-generator/{num?}', 'ProfileGeneratorController@generateProfile');
+// User generator
+Route::get('user/{num?}', 'UserController@generateUser');

@@ -23,3 +23,11 @@
 .bs-callout p:last-child {
 	margin-bottom: 0;
 }
+
+.bs-callout dl {
+	margin-bottom: 15px;
+}
+
+.bs-callout dl:last-child {
+	margin-bottom: 0;
+}
